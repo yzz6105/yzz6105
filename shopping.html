@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<title>Shopping Page</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    function thankyou() {
+        var a = confirm("Thank you for Shoping!!!Have a great day.");
+        if (a == true) {
+            window.open("file:///C:/Users/Khyati/Desktop/Stationary_2/stationary.html");
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+    function bigImg(x) {
+        x.style.height = "350px";
+        x.style.width = "350px";
+        x.style.left = "10%";
+        x.style.left = "0%";
+        x.style.left = "0%";
+    }
+    function normalImg(x) {
+        x.style.height = "250px";
+        x.style.width = "250px";
+        x.style.left = "14%";
+        x.style.left = "16%";
+    }
+    function billin(x) {
+        x.style.color = "red"
+        x.style.padding = "12px 26px"
+    }
+    function billout(x) {
+        x.style.color = "black";
+        x.style.padding = "8px 22px"
+    }
+    function generatebill() {
+        var n1, n2, n3, n3, n4, n5, n6, n7, n8, b;
+        n1 = document.myform.n1.value;
+        n2 = document.myform.n2.value;
+        n3 = document.myform.n3.value;
+        n4 = document.myform.n4.value;
+        n5 = document.myform.n5.value;
+        n6 = document.myform.n6.value;
+        n7 = document.myform.n7.value;
+        n8 = document.myform.n8.value;
+        n1 = parseFloat(n1);
+        n2 = parseFloat(n2);
+        n3 = parseFloat(n3);
+        n4 = parseFloat(n4);
+        n5 = parseFloat(n5);
+        n6 = parseFloat(n6);
+        n7 = parseFloat(n7);
+        n8 = parseFloat(n8);
+        b = (n1 * 20) + (n2 * 30) + (n3 * 60) + (n4 * 100) + (n5 * 40) + (n6 * 50) + (n7 * 35) + (n8 * 20);
+        document.myform.bill.value = b;
+        setTimeout(() => { thankyou() }, 2000)
+    }
+</script>
+
+<body>
+    <img class="shopingbg"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSQI8fgeqYvj8pn-Fr5owbP1uFTgFXcwSfkg&usqp=CAU"
+        alt="Background">
+    <h1 style="font-size: 30px; color: rgb(243, 16, 27); text-align: center;">Select quantity and place your order!</h1>
+    <form name="myform">
+        <br><br><br><br>
+        <div id="x" style="  left: 20%;">
+            <p id="tana">Writometer pen</p>
+            <img id="img1" src="https://static.cilory.com/506422-thickbox_default/flair-writo-meter-gel-pen.jpg"
+                alt="Writometer Pen" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <p id="des">Availablity : 30<br>Price per unit : 20Rs<br>
+                <label for="quan">Quantity: </label>
+                <select name="quan" id="n1">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </p>
+        </div>
+        <div id="x" style="  left: 60%;">
+            <p id="tana">Flair Pen Pencil</p>
+            <img id="img1"
+                src="https://static.cilory.com/477309-thickbox_default/flair-graphite-20-mm-mechanical-pencil.jpg"
+                alt="Pen Pencil" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <p id="des">Availablity : 25<br>Price per unit : 30Rs<br>
+                <label for="quan">Quantity: </label>
+                <select name="quan" id="n2">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </p>
+        </div>
+        <div id="y" style="  left: 20%;">
+            <p id="tana">Classmate Notebook</p>
+            <img id="img1"
+                src="https://www.bigbasket.com/media/uploads/p/l/40005746_5-classmate-notebook-a4-single-line-ruled-long.jpg"
+                alt="Classmate Notebook" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <p id="des">Availablity : 50<br>Price per unit : 60Rs<br>
+                <label for="quan">Quantity: </label>
+                <select name="quan" id="n3">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </p>
+        </div>
+        <div id="y" style="  left: 60%;">
+            <p id="tana">Stepler 2S8</p>
+            <img id="img1"
+                src="https://img2.exportersindia.com/product_images/bc-full/dir_166/4979684/heavy-duty-stapler-1512631806-3502962.jpeg"
+                alt="Stepler" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <p id="des">Availablity : 10<br>Price per unit : 100Rs<br>
+                <label for="quan">Quantity: </label>
+                <select name="quan" id="n4">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </p>
+        </div>
+        <div id="z" style="  left: 20%;">
+            <p id="tana">Sissors</p>
+            <img id="img1" src="https://penstore.com/bilder/artiklar/zoom/101686_1.jpg?m=1598347509"
+                alt="Classmate Notebook" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <p id="des">Availablity : 10<br>Price per unit : 40Rs<br>
+                <label for="quan">Quantity: </label>
+                <select name="quan" id="n5">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </p>
+        </div>
+        <div id="z" style="  left: 60%;">
+            <p id="tana">Sticky Notes</p>
+            <img id="img1" src="https://m.media-amazon.com/images/I/71W1h8GTqQL._AC_SS450_.jpg" alt="Stepler"
+                onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <p id="des">Availablity : 25<br>Price per unit :
+                50Rs<br>
+                <label for="quan">Quantity: </label>
+                <select name="quan" id="n6">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </p>
+        </div>
+        <div id="w" style="  left: 20%;">
+            <p id="tana">Marker Pen</p>
+            <img id="img1" src="https://papercube.in/wp-content/uploads/2021/05/Laxor-Fine-tip-Marker-Pen-1-pen.jpg"
+                alt="Classmate Notebook" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <p id="des">Availablity : 35<br>Price per unit : 35Rs<br>
+                <label for="quan">Quantity: </label>
+                <select name="quan" id="n7">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </p>
+        </div>
+        <div id="w" style="  left: 60%;">
+            <p id="tana">Colour Pencils</p>
+            <img id="img1" src="https://m.media-amazon.com/images/I/81yj4L70haL._SL1500_.jpg" alt="Stepler"
+                onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <p id="des">Availablity : 10<br>Price per unit : 20Rs<br>
+                <label for="quan">Quantity: </label>
+                <select name="quan" id="n8">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </p>
+        </div>
+        <center>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <input type="button" Value="Click Here To Check Bill" onclick="generatebill()" onmouseover="billin(this)"
+                onmouseout="billout(this)" style="font-size: 25px; box-sizing: content-box; border-radius: 5px; margin: 10px 8px;
+                    cursor: pointer;padding: 8px 22px; background-color: rgba(147, 236, 232, 0.651)">
+            <br>
+            <label for="bill"></label>
+            <input type="number" id="bill" value="" style="font-size: 25px; box-sizing: content-box; border-radius: 5px; margin: 10px 8px;
+            cursor: pointer;padding: 6px 20px; text-align: center;">
+        </center>
+    </form>
+</body>
+
+</html>

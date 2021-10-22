@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>details</title>
+        <link rel="stylesheet" type="text/css" href="page3.css">
+    </head>
+
+<script type="text/javascript">
+
+
+function realfun() {
+            final = "";
+            for (var i = 0; i < 10; i++)
+            {
+                if (document.getElementsByClassName("p")[i].value == "Hubli") {
+                   var n= document.getElementsByClassName("name")[i].innerHTML;
+                    final+=n
+                    final+="<br></br>"
+                    document.getElementById("result").innerHTML = final;
+                }
+            }
+        }
+</script>
+<body>
+    <center>
+        <h1>Passengers Details</h1>
+        <br><br><br><br>
+        <table id="A" style="width: 100%;">
+            <tr>
+                <th>Name</th>
+                <th>Ticket Id</th>
+                <th>Destination</th>
+            </tr>
+            
+            <tr>
+                <td class="name">Manjunath</td>
+                <td>1001</td>
+                <td><input type="text" class="p"></td>
+                
+               
+            </tr>
+            
+            <tr>
+                <td class="name">Vijay</td>
+                <td>1002</td>
+                <td><input type="text" class="p"></td>
+                
+            </tr>
+            
+            <tr>
+                <td class="name">Sunil</td>
+                <td>1003</td>
+                <td><input type="text" class="p"></td>
+                
+            </tr>
+            
+            <tr>
+                <td class="name">Ketan</td>
+                <td>1004</td>
+                <td><input type="text" class="p"></td>
+                
+            </tr>
+            
+            <tr>
+                <td class="name">Basu</td>
+                <td>1005</td>
+                <td><input type="text" class="p"></td>
+                
+            </tr>
+        </table>
+            <div class="mytable">
+                <input Style="background-color: orange; font-size: 20px;" type="button" name="submit" id="submit" value="submit" onclick="realfun()">
+        </div>
+        <div id="result"></div>
+
+    </center>
+    </body>
+    </html>

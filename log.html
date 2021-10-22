@@ -1,0 +1,44 @@
+<html>
+    <head>
+       <title>login Page</title>
+       <link rel="stylesheet" type="text/css" href="log.css">
+    </head>
+
+    <script type="text/javascript">
+        function fun()
+        {
+            if(document.getElementById("user").value == "user")
+            {
+                if(document.getElementById("pass").value == "user")
+                {
+                    alert("login successfull")
+                   
+                }
+                else{
+                    alert("Username or Password Incorrect!!..")
+                }
+            }
+            else{
+                    alert("Username or Password Incorrect!!..")
+                }
+        }
+    </script>
+
+
+
+
+    <body>
+        <div class="loginbox">
+            <img src="avatar.png", class="avatar">
+            <h1>Login Here</h1>
+            <form>
+                <p>Username</p>
+                <input type="text" name="username" placeholder="Enter Username" id="user">
+                <p>Password</p>
+                <input type="password" name="password" placeholder="Enter Password" id="pass">
+                <input type="submit" name="" value="Login" onclick="fun()" formaction="page2.html">
+            </form>
+        </div>
+        
+    </body>
+</html>

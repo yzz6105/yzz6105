@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<title>Login Page</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    function validation() {
+        var u, p;
+        u = document.login.username.value;
+        p = document.login.password.value;
+        if (u == "username" && p == "password") {
+            window.open("D:/web tech/ESA Practise/Javascript/javascript_3/interface.html");
+            return true;
+        } else {
+            document.write("<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><h1><center>Ooops!!!<br>Credentials are not matching.<br><a href='file:///C:/Users/Khyati/Desktop/Stationary_2/login.html'>Login Again.</a></center><h1>");
+            return false;
+        }
+    }
+</script>
+
+<body>
+    <img class="loginbg" src="https://crm.radzen.com/assets/images/login-background.png" alt="Background">
+    <img class="login" src="https://www.nicepng.com/png/full/120-1201448_search-radio-icon-png-blue.png" alt="login">
+    <center>
+        <div class="a">
+            <br><br><br>
+            <h3 style="color: rgb(35, 140, 148);">Login here for shopping!</h3>
+            <br>
+            <form name="login">
+                <label for="username" style="color:black; font: bold;">Username: </label>
+                <input type="text" id="username" value="" style="font-size: 30px;">
+                <br><br>
+                <label for="password" style="color:black; font: bold;">Password: </label>
+                <input type="password" id="password" value="" style="font-size: 30px;">
+                <br><br>
+                <input type="button" Value="Login" onclick="validation()" style="font-size: 25px; box-sizing: content-box; border-radius: 5px; margin: 10px 8px;
+                    cursor: pointer;padding: 8px 22px; background-color: rgba(35, 140, 148, 0.534);">
+            </form>
+        </div>
+    </center>
+</body>
+
+</html>

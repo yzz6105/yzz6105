@@ -1,0 +1,169 @@
+.loginbg {
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  background-size: cover;
+  opacity: 0.6;
+}
+
+.login {
+  top: 23%;
+  left: 47%;
+  height: 110px;
+  width: 110px;
+  align-items: center;
+  position: absolute;
+}
+
+.interfacebg {
+  width: 100%;
+  position: fixed;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.shopingbg {
+  width: 100%;
+  position: fixed;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.stationarybg {
+  width: 100%;
+  position: fixed;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.a {
+  align-content: center;
+  align-items: center;
+  position: absolute;
+  left: 26%;
+  top: 20%;
+  font-size: 30px;
+  background-color: rgba(14, 13, 13, 0.418);
+  height: 520px;
+  width: 750px;
+}
+
+td {
+  text-align: center;
+  font-size: 26px;
+  align-items: center;
+}
+
+th {
+  font-size: 37px;
+  text-align: center;
+}
+
+.c {
+  background-color: rgba(147, 236, 232, 0.651);
+}
+
+.c1 {
+  background-color: rgba(223, 203, 214, 0.788);
+}
+
+.c2 {
+  background-color: rgba(206, 180, 184, 0.726);
+}
+
+p {
+  align-content: center;
+  align-items: center;
+  position: absolute;
+  left: 35%;
+  top: 45%;
+  font-size: 30px;
+  height: 10px;
+  width: 500px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.ss {
+  align-content: center;
+  align-items: center;
+  position: absolute;
+  left: 35%;
+  top: 61%;
+  font-size: 30px;
+  height: 30px;
+  width: 53px;
+  text-align: center;
+}
+
+#img1 {
+  top: 16%;
+  height: 250px;
+  width: 250px;
+  border-radius: 15px;
+  position: absolute;
+  left: 14%;
+  align-content: center;
+}
+
+#x {
+  position: absolute;
+  top: 12%;
+  font-size: 30px;
+  background-color: rgba(14, 13, 13, 0.418);
+  height: 480px;
+  width: 350px;
+  align-items: center;
+  align-content: center;
+}
+
+#y {
+  position: absolute;
+  top: 84%;
+  font-size: 30px;
+  background-color: rgba(14, 13, 13, 0.418);
+  height: 480px;
+  width: 350px;
+  align-items: center;
+  align-content: center;
+}
+
+#z {
+  position: absolute;
+  top: 156%;
+  font-size: 30px;
+  background-color: rgba(14, 13, 13, 0.418);
+  height: 480px;
+  width: 350px;
+  align-items: center;
+  align-content: center;
+}
+
+#w {
+  position: absolute;
+  top: 228%;
+  font-size: 30px;
+  background-color: rgba(14, 13, 13, 0.418);
+  height: 480px;
+  width: 350px;
+  align-items: center;
+  align-content: center;
+}
+
+#tana {
+  position: absolute;
+  left: 27%;
+  top: 0%;
+  font-size: 25px;
+  color: white;
+}
+
+#des {
+  position: absolute;
+  left: 28%;
+  top: 75%;
+  font-size: 20px;
+  color: white;
+}

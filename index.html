@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <style>
+        body {
+            background-color: rgba(143, 188, 143, 0.685);
+        }
+
+        .container {
+            position: absolute;
+            height: 580px;
+            width: 500px;
+            top: 100px;
+            left: 500px;
+            background-color: rgba(0, 0, 0, 0.877);
+            border-radius: 50px;
+            border: 10px solid rgb(82, 131, 82);
+            z-index: -5;
+            align-items: center;
+            align-content: center;
+            color: rgb(82, 131, 82);
+        }
+
+        .container input[type="text"],
+        input[type="number"],
+        input[type="email"] {
+            position: absolute;
+            color: rgb(82, 131, 82);
+            border: 2px solid rgb(82, 131, 82);
+            height: 30px;
+            width: 260px;
+            background-color: transparent;
+            border-radius: 10px;
+            align-content: center;
+            align-items: center;
+            padding-left: 180px;
+            margin-left: 25px;
+
+        }
+
+        .container p {
+            align-content: center;
+            align-items: center;
+            font-size: 30px;
+            position: relative;
+            padding-left: 150px;
+
+        }
+
+        .reg-btn {
+            position: absolute;
+            color: rgb(82, 131, 82);
+            border: 2px solid rgb(82, 131, 82);
+            height: 40px;
+            width: 250px;
+            background-color: transparent;
+            border-radius: 30px;
+            align-content: center;
+            align-items: center;
+            padding-left: 15px;
+            margin-left: 130px;
+            cursor: pointer;
+        }
+
+        .a {
+            position: absolute;
+            text-decoration: none;
+            color: white;
+            margin-left: 180px;
+            top: 540px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <p>Registration Form</p>
+            <br>
+            <input type="text" name="fname" id="fname" placeholder="Full name" required />
+            <br><br><br><br>
+            <input type="text" name="username" id="username" placeholder="Username" required />
+            <br><br><br><br>
+            <input type="text" name="password" id="password" placeholder="Password" required />
+            <br><br><br><br>
+            <input type="email" name="email" id="email" placeholder="Email Adress" required />
+            <br><br><br><br>
+            <input type="number" name="phone" id="phone" placeholder="Phone Number" required />
+            <br><br><br><br>
+            <input type="button" name="register" id="register" value="Register" onclick="signup()" class="reg-btn">
+            <br>
+        </form>
+    </div>
+    <script type="text/javascript">
+        fname = document.getElementById("fname");
+        username = document.getElementById("username");
+        password = document.getElementById("password");
+        email = document.getElementById("email");
+        phone = document.getElementById("phone");
+
+
+        function signup() {
+            var data = JSON.parse(window.localStorage.getItem('normaljs'));
+            var temp = { 'Name': fname.value, 'Username': username.value, 'Password': password.value, 'Email': email.value, 'Phone': phone.value };
+            data.push(temp);
+            window.localStorage.setItem('normaljs', JSON.stringify(data));
+            alert('user added!')
+        }
+
+    </script>
+
+</body>
+
+</html>

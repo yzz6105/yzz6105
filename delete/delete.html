@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <style>
+        body {
+            background-color: rgba(143, 188, 143, 0.685);
+        }
+
+        .container {
+            position: absolute;
+            height: 150px;
+            width: 280px;
+            top: 100px;
+            left: 600px;
+            background-color: rgba(0, 0, 0, 0.877);
+            border-radius: 50px;
+            border: 10px solid rgb(82, 131, 82);
+            z-index: -5;
+            align-items: center;
+            align-content: center;
+            color: rgb(82, 131, 82);
+        }
+
+        .container input[type="text"] {
+            position: absolute;
+            color: rgb(82, 131, 82);
+            border: 2px solid rgb(82, 131, 82);
+            height: 40px;
+            width: 170px;
+            background-color: transparent;
+            border-radius: 30px;
+            align-content: center;
+            align-items: center;
+            padding-left: 75px;
+            margin-left: 10px;
+        }
+
+        .btn {
+            position: absolute;
+            color: rgb(82, 131, 82);
+            border: 2px solid rgb(82, 131, 82);
+            height: 40px;
+            width: 250px;
+            background-color: transparent;
+            border-radius: 30px;
+            align-content: center;
+            align-items: center;
+            padding-left: 15px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="/deleteuser" method="post">
+            <br><br>
+            <input type="text" placeholder="Enter Username" name="username" id="username" required />
+            <br><br><br>
+            <input type="submit" value="Delete user" class="btn">
+        </form>
+    </div>
+
+</body>
+
+</html>
